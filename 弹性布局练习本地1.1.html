@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!-- saved from url=(0119)file:///C:/Users/Administrator/Desktop/%E5%BC%B9%E6%80%A7%E5%B8%83%E5%B1%80%E7%BB%83%E4%B9%A0%E6%9C%AC%E5%9C%B01.0.html -->
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title _msttexthash="10664186" _msthash="0">弹性布局</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      /* * {
+        border: 1px solid black;
+      } */
+      .flex {
+        display: flex;
+      }
+      .flex3 {
+        flex: 3;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .yinying {
+        box-shadow: 9px 9px 9px #e0c2eb;
+      }
+      .baiSe {
+        background-image: url(https://img.tukuppt.com/ad_preview/00/09/32/5d4afaaa240a8.jpg!/fw/980);
+        background-size: 100% 100%;
+      }
+      .baiSe1 {
+        background-image: url(https://img.51miz.com/Element/00/72/28/46/93618236_E722846_e4000250.jpg);
+        background-size: 100% 100%;
+      }
+      .baiSe2 {
+        background-image: url(https://bpic.588ku.com/back_pic/06/01/42/036006ed46c6e1f.jpg);
+        background-size: 100% 100%;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg13 {
+        margin: 8px;
+      }
+
+      .mgr {
+        margin-right: 8px;
+      }
+      .zise {
+        background-color: rgb(224, 213, 224);
+      }
+      .mgt {
+        margin-top: 8px;
+      }
+      /* .daohang { 
+        /* padding: 0px 0px; */
+      /* border-bottom: 0px solid #391fa3; */
+      /* font-size: 24px; */
+      ｝*/ .mgr1 {
+        margin-right: 1px;
+      }
+      .bolder {
+        font-weight: bolder;
+      }
+      .mrl {
+        margin-left: 5px;
+      }
+      .zt {
+        font-family: "Lucida Calligraphy", cursive, serif, sans-serif;
+      }
+      .ztys {
+        font-family: arial;
+        color: rgb(20, 18, 1);
+        font-size: 18px;
+      }
+      /* 当屏幕宽度小于600px时要改变的css */
+      @media (max-width: 600px) {
+        .cb {
+          display: none;
+        }
+        .nr {
+          flex-direction: column;
+        }
+        .sj {
+          flex-direction: column;
+        }
+        .yq {
+          margin-left: 8px;
+        }
+        .sjk {
+          margin: 0 0 8px;
+          flex: auto;
+        }
+      }
+      .neirong::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body
+    class="flex"
+    style="
+      background-image: url(https://sc.68design.net/photofiles/201004/jfjqs04tdO.jpg);
+      background-size: 100% 100%;
+    "
+  >
+    <!--侧边栏-->
+    <div
+      style="
+        width: 200px;
+        background-image: url(https://sc.68design.net/photofiles/201004/jfjqs04tdO.jpg);
+        background-size: 100% 100%;
+      "
+      class="zise yinying"
+    >
+      <!--头像兰-->
+      <div
+        class="flex"
+        style="
+          padding: 10px;
+          align-items: center;
+          justify-content: center;
+          border-bottom: 1px solid red;
+          background-image: url(https://public.1848.cn/2020-8/25/197aacf7-a614-4f3b-a6ce-a84d9c8a4bd7/197aacf7-a614-4f3b-a6ce-a84d9c8a4bd71.gif);
+
+          background-size: 100% 100%;
+        "
+      >
+        <img
+          src="./弹性布局练习本地1.0_files/bee7a7cfe923424e882cac73272fe4aa.jpeg"
+          width="49px"
+          height="40px"
+          alt=""
+        />
+        <div style="font-size: 29px" class="bolder mrl zt">
+          <font color="black" _msttexthash="10882859" _msthash="1"
+            >仁者家园</font
+          >
+        </div>
+      </div>
+      <!--导航栏-->
+      <div class="flex1 bolder">
+        <div class="daohang zt">
+          <a
+            href="https://www.bilibili.com/video/BV1aU4y127mg/?spm_id_from=333.999.0.0&vd_source=56314f648fa9c71ff8300623df9c4f34"
+          >
+            <img
+              src="https://img1.baidu.com/it/u=2819958008,2254164395&fm=253&fmt=auto&app=120&f=JPEG?w=587&h=339"
+              width="200px"
+              height="130px"
+          /></a>
+        </div>
+        <div class="daohang zt">
+          <a
+            href="https://www.zhonghuadiancang.com/xuanxuewushu/taiyijinhuazongzhi/"
+          >
+            <img
+              src="https://img0.baidu.com/it/u=1869207415,326116852&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500"
+              width="200px"
+              height="130px"
+          /></a>
+        </div>
+        <div class="daohang zt">
+          <a href="https://www.midorg.com/">
+            <img
+              src="https://pic4.zhimg.com/v2-b823bbdec3c826bf40b4feb944b1e3f1_1440w.jpg?source=172ae18b"
+              width="200px"
+              height="130px"
+          /></a>
+        </div>
+        <!-- <div class="daohang" _msttexthash="8725119" _msthash="3">待开发导航栏</div> -->
+      </div>
+    </div>
+
+    <!--主区域-->
+    <div class="flex flex1 column">
+      <!--头部栏-->
+      <div
+        style="
+          height: 60px;
+          font-size: 30px;
+          text-align: center;
+          line-height: 2;
+          background-image: url(https://pic.2amok.com/20200526/414ba2aee50072efb4070923ede1ad3c_00001.jpg?x-oss-process=image/watermark,type_d3F5LW1pY3JvaGVp,size_57,text_5YeM54K56KeG6aKR57Sg5p2Q572RIHd3dy4yYW1vay5jb20gIElEOjMxNDEyOA==,color_FFFFFF,shadow_70,t_70,g_se,x_100,y_80);
+          background-size: 100% 100%;
+        "
+        class="baise yinying zt bolder"
+      >
+        <b style="font-weight: bolder"
+          >探求生存发展之路 为人类继承真知 智慧 绝学</b
+        >
+      </div>
+      <!--内容区-->
+      <div style="overflow: auto" class="flex flex1">
+        <!--左区域-->
+        <div style="flex: 4" class="flex column mg13">
+          <!--数据区-->
+          <div class="flex">
+            <!--shujukuai-->
+            <div
+              style="
+                height: 100px;
+                font-size: 72px;
+                color: aqua;
+                text-align: center;
+                background-image: url(https://x0.ifengimg.com/ucms/2021_43/312702ECBC4FBFED69F0E631CC618E28F25A46FD_size209_w1200_h900.jpg);
+                background-size: 100% 100%;
+              "
+              class="flex1 mg13 yinying"
+            >
+              <a
+                href="https://www.bilibili.com/video/BV1Wd4y1t7uD/?spm_id_from=333.337.search-card.all.click&vd_source=56314f648fa9c71ff8300623df9c4f34"
+                >天</a
+              >
+            </div>
+            <!--shujukuai-->
+            <div
+              style="
+                height: 100px;
+                font-size: 72px;
+                text-align: center;
+                color: rgb(9, 4, 20);
+                background-image: url(https://img1.baidu.com/it/u=3368180319,1630585925&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=612&amp;h=459);
+                background-size: 100% 100%;
+              "
+              class="flex1 mg13 yinying"
+            >
+              <a
+                href="https://www.bilibili.com/video/BV1424y1h7yx/?spm_id_from=333.337.search-card.all.click&vd_source=56314f648fa9c71ff8300623df9c4f34"
+                >地</a
+              >
+            </div>
+            <!--shujukuai-->
+            <div
+              style="
+                height: 100px;
+                font-size: 72px;
+                color: rgb(241, 7, 7);
+                text-align: center;
+                background-image: url(https://5b0988e595225.cdn.sohucs.com/images/20171112/65cd0dcc1e73405d89221da1dd6f5867.jpg);
+                background-size: 100% 100%;
+              "
+              class="flex1 mg13 yinying"
+            >
+              <a
+                href="https://www.bilibili.com/video/BV1qA41127zk/?spm_id_from=333.337.search-card.all.click&vd_source=56314f648fa9c71ff8300623df9c4f34"
+                >人</a
+              >
+            </div>
+            <!--shujukuai-->
+            <!-- <div style="height: 100px" class="flex1 baiSe mg13 yinying"></div> -->
+          </div>
+          <!--列表区-->
+          <div class="flex column"></div>
+          <!--liebiaoxiang-->
+
+          <div
+            style="height: 160px"
+            class="baiSe mg13 yinying ztys"
+            _msttexthash="490758879"
+            _msthash="3"
+          >
+            &nbsp; &nbsp; &nbsp;
+            &nbsp;人的构成到底是什么？基因？细胞？组织？肉体？灵魂？这里不得不用到了道家的学说：三魂七魄，三尸六贼,从本质上来认识生命才能让人正确认识自己，从而为日常行为做出正确的选择，走向正确的生命方向，而不是进入互相纠缠，互相伤害的深渊！！
+          </div>
+          <div
+            class="baiSe mg13 yinying ztys"
+            _msttexthash="490758879"
+            _msthash="3"
+          >
+            &nbsp; &nbsp; &nbsp;
+            &nbsp;简单来说，人就是由魂魄和肉体组成的生命，而只有肉体的躯体只是尸体，只有魂魄齐全的生命才是正常的生命，魂魄不全的生命可能是傻子、疯子，或者植物人！骂人的话有一句话叫做：缺魂！！多么的有道理，又是多么的深遂！老祖宗的话总是那么的蕴含道理，可惜我们现代人都太肤浅了，被西方文化侵蚀下，有些人已经开始数典忘祖，意图覆灭中华文化，他们已经沦为了欲望的走狗！意图掩盖世界的真相，使人们都沦为欲望的奴隶，沦为少数人欲望的奴隶，开始他们奴役压榨的统治欲望！
+          </div>
+          <div
+            class="baiSe mg13 yinying ztys"
+            _msttexthash="490758879"
+            _msthash="3"
+          >
+            &nbsp; &nbsp; &nbsp; &nbsp;<b style="font-weight: bold; color: red"
+              >万物归其性，万物归其命！世界分阴阳，人也分阴阳，你的性质决定了你的命运，决定了你的最终结果和归宿！</b
+            >为什么？用现代的话来说：就是同频共振，你在哪个频率上震动，最终就自觉或不自觉的聚拢汇集到和你频率相同或相似的领域世界，这个领域世界是由构成者的性质决定的，不符合的最终被排除，剔除。所以世界有很多种，多种多样的世界组成一个大世界，他们不是一成不变的，也是在不断的演变着的！
+          </div>
+          <div
+            class="baiSe mg13 yinying ztys"
+            _msttexthash="490758879"
+            _msthash="3"
+          >
+            &nbsp; &nbsp; &nbsp;
+            &nbsp;人在日常生活中，是由魄主事的，魂好生、魄望死，一切好色动气皆是魄之行为，由魄主事的结果只有一个，一步步的走向疾病、痛苦、死亡、灭亡。所以要想生命有个好的结果，一步步的走向光明，就要明白人到底是怎么回事。一般人只知道有一个自我，但却不知道这个自我是什么，由什么构成！你以为的自我其实只是一个由魄主事，魂随其后的生命形式个体，醒着各种贪婪欲望设想，目标理想，都是由魄主导的，不是魂主导的，睡着了又魂魄纷飞游魂千里，所以做梦多的睡眠质量都差，无梦的睡眠质量是最高的，魂的休息才是真的休息，这也是为什么无梦的睡眠才是质量最高的原因。人对魄尚且认知寥寥，何况是魂。我们根本就是站在魄的身体上来谈论魂，又从何而知呢？靠识？识者识神也，不过是魄的外表而已，夏虫不可语冰，要认识魂需要特殊的路径的。简单的归纳一下就是：魂是你的生命的根本，有魂在就有命在，魂不在命即无。魄就是你的自我意识所在，魄在自我意识在，魄无自我意识消失。孤阴不生，独阳不长，阴阳互根，相生相克，互为依存！
+          </div>
+          <div
+            class="baiSe mg13 yinying ztys"
+            _msttexthash="490758879"
+            _msthash="3"
+          >
+            &nbsp; &nbsp; &nbsp;
+            &nbsp;魂魄按性质划分可以分为阴和阳，魄属于阴，所以魄望死，这是由它的性质决定的，是不以人的意志为转移的，这是宇宙的道。魂属阳，所以说魂好生。人人都想长生，自由不被束缚，不想要痛苦，那么想要自由就要由魂主事，而不是魄主事，可是如果变成由魂主事，那和成仙也没有区别了，我们站在魄的身体上却想着由魂来主事，可能吗？不是不可能，只能说很难，因为自我否定是最难的！！但是不是不可实现，有方法路径可以靠近或者进入。
+          </div>
+          <div
+            class="baiSe mg13 yinying ztys"
+            _msttexthash="490758879"
+            _msthash="3"
+          >
+            &nbsp; &nbsp; &nbsp;
+            &nbsp;把行为简单的分类，一切执着，妄想，都是魄之所为。而魂主事，并非无知无识，魂主事有一个特点叫：观照而不染着、执著，可以照见一切！再简化点就是：观、照，而非：执、著，多体会：观、照之意，一旦深入你会发现，原来观照并不影响思、想、行为，并不影响你做人，做事。一切都是可见的，包括你的思维，此时才谓之：明！！那个时候你才有你真正的主人当家做主，你才有你真正的神做主，而不是六神无主；你才有你真正的上帝，你的上帝只是你自己的魂，是你现在毫无认知的魂！！
+            所以我们日常生活中要常增照心，以减妄心！向魂主事靠拢，渐渐让魄主事弱化，最后退位！这个方法就是：观照！遇事多照而不执，直至魂上位主事，不再易主！
+            当起照心，以减妄心，让一切<b
+              style="font-weight: bold/bolder; color: red"
+              >如是，如是，如是。</b
+            >日常生活中让我们尽可能的，<b
+              style="font-weight: bold/bolder; color: red"
+              >常做如是观 ，以观照为心！！！</b
+            >
+          </div>
+          <div
+            class="baiSe mg13 yinying ztys"
+            _msttexthash="490758879"
+            _msthash="3"
+          >
+            &nbsp; &nbsp; &nbsp;
+            &nbsp;虽然我们暂时不能做到完全由自己的魂主事，但是阴中有阳，我们可以不断的通过特殊的方法提升自己阳气，让自己的性质悄悄的开始改变。这个过程是逆着魄的意愿的，所以就要有这个清醒的认知，明白自己是逆势而为，<b
+              style="font-weight: bold/bolder; color: red"
+              >如果要提升阳气去除阴气，一定要努力才行！大势向死，我们却只能逆势而为，如逆水行舟努力而行。</b
+            >最不济可以提振阳气，减缓减少倒霉，衰老疾病的过程！若能使自己达到纯阳之体，那只有一个结果：飞升！这里不做过多解释，一般人也很难，特别是现在的社会！一个被欲望为主导的社会就更难了，但是我们不能随波逐流，必须要自省，自立，自强不息。常人不过是在魄阴这个望死的主导下奔向一个结果：死亡！该如何抉择在人自知！
+          </div>
+          <div
+            class="baiSe mg13 yinying ztys"
+            _msttexthash="490758879"
+            _msthash="3"
+          >
+            &nbsp; &nbsp; &nbsp;
+            &nbsp;这个网站建立的初衷就是为了给有善心的人提供一点点帮助，世界有因果，有大势，明白其中的道理，让我们做出适合自己的正确的抉择。<b
+              style="font-weight: bolder; color: red"
+              >万物归其性，万物归其命！你的性质决定了你的命运，决定了你的最终结果和归宿！</b
+            >（本网站会不断的建设完善，祝所有的人都能获得自由、健康、快乐！）
+            <br /><br /><br />
+          </div>
+          <div style="height: 160px" class="baiSe mg13 yinying ztys"></div>
+        </div>
+        <!--右区域-->
+        <div style="flex: 1" class="flex column mgt yinying">
+          <!--tishiqu-->
+          <div style="height: 150px" class="baiSe1 mgt yinying"></div>
+          <!--xiaoxiqu-->
+          <div style="height: 300px" class="baiSe2 mgt yinying"></div>
+          <!--音乐控件-->
+          <embed
+            src="./muzk_files/lizhigequ.mp3"
+            width="350px"
+            height="100"
+            class="mg13"
+            style="
+              background-image: url(https://public.1848.cn/2020-8/25/197aacf7-a614-4f3b-a6ce-a84d9c8a4bd7/197aacf7-a614-4f3b-a6ce-a84d9c8a4bd71.gif);
+            "
+          />
+          <audio
+            src="./muzk_files/lizhigequ.mp3"
+            controls="controls"
+            autoplay="autoplay"
+            loop="loop"
+            class="mgt"
+          ></audio>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
